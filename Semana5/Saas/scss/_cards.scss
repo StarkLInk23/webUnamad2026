@@ -1,0 +1,49 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px,1fr)
+    );
+    gap: 20px;
+    padding: 20px;
+
+    .card{
+        //flex 1 1 calc(33.33% - 40px);
+        flex: 0 0 calc(25% - 20px);
+        max-width: 350px;
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0, .2);
+        transition: .3s;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        h2{
+            color: $primary;
+            margin-bottom: 15px;
+        }
+
+        p{
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+    }
+
+    /*TABLET*/
+    @include responsive(tablet) {
+        .card {
+            flex: 0 0 calc(50% - 20px);
+        }
+    }
+
+    /*MOBILE*/
+    @include responsive(mobile) {
+        padding: 20px;
+        .card {
+            flex: 1 1 100%;
+        }
+    }
+}

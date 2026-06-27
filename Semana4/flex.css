@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+.box{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box div{
+    width: 500px;
+    background-color: red;
+}
+
+.box div:nth-child(even){
+    background-color: yellow;
+}
+*/
+
+.box{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box div:first-child{
+    width: 500px;
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+.box div:last-child{
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+/*Implementando shrink*/
+.shrink{
+    width: 500px;
+    display: flex;
+}
+
+.shrink div{
+    width: 500px;
+    background-color: red;
+}
+
+.shrink div:first-child{
+    background-color: yellow;
+    width: 500px;
+}
+
+.shrink div:last-child{
+    background-color: yellow;
+    width: 500px;
+}
+
+.flex-inicio{
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.flex-inicio div{
+    background-color: aquamarine;
+}
+
+.flex-inicio div:first-child{
+    background-color: yellow;
+}
+
+.flex-inicio div:last-child{
+    background-color: yellow;
+    
+}
+
+.flex-final{
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.flex-final div{
+    background-color: aquamarine;
+}
+
+.flex-final div:first-child{
+    background-color: yellow;
+}
+
+.flex-final div:last-child{
+    background-color: yellow;
+    
+}
+
+.flex-center{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-center div{
+    background-color: aquamarine;
+}
+
+.flex-center div:first-child{
+    background-color: yellow;
+}
+
+.flex-center div:last-child{
+    background-color: yellow;
+    
+}
+
+.flex-between{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-between div{
+    background-color: aquamarine;
+}
+
+.flex-between div:first-child{
+    background-color: yellow;
+}
+
+.flex-between div:last-child{
+    background-color: yellow;
+    
+}
+
+.flex-around{
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flex-around div{
+    background-color: aquamarine;
+}
+
+.flex-around div:first-child{
+    background-color: yellow;
+}
+
+.flex-around div:last-child{
+    background-color: yellow;
+    
+}

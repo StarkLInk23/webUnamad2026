@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===BLOQUE PRINCIPAL=== */
+.artesania{
+    width: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 8px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+/* ===MODIFICADOR DEL BLOQUE=== */
+.artesania--featured{
+    border: 3px solid #0077ff;
+}
+
+/* ===ELEMENTO IMAGEN=== */
+.artesania__image{
+    width: 100%;
+    display: block;
+}
+
+/* ===ELEMENTO BODY=== */
+.artesania__body{
+    padding: 20px;
+}
+
+/* ===ELEMENTO DESCRIPCION=== */
+.artesania__descrip{
+    text-align: justify;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* ===ELEMENTO PRECIO=== */
+.artesania__precio{
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ===ELEMENTO BOTON=== */
+.artesania__button{
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+/* ===MODIFICADOR DEL BOTON=== */
+.artesania__button--enroll{
+    background-color: #0077ff;
+    color: white;
+}
+
+/* ===HOVER DEL BOTON=== */
+.artesania__button--enroll:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====BLOQUE PRINCIPAL==== */
+.card {
+    width: 320px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ====MODIFICADOR DEL BLOQUE==== */
+.card--caracteristicas {
+    border: 3px solid orange;
+}
+
+/* ====ELEMENTO IMAGEN==== */
+.card_image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ====ELEMENTO TITULO==== */
+.card_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+/* ====MODIFICADOR DEL BOTÓN==== */
+.card_button--success {
+    background-color: steelblue;
+    color: white;
+}
+
+/* ====HOVER DEL BOTÓN==== */
+.card_button--success:hover {
+    background-color: goldenrod;
+}

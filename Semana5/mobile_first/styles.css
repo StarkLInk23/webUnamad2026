@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: 1fr; /* 1 columnas por defecto*/
+   gap: 15px;
+   width: 100%;
+   padding: 15px;
+}
+
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* tablet desde 768px */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas para móviles */
+    }
+    .card {
+        color: yellow; /* Opcional: cambio visual para identificar el salto */
+    }
+}
+
+
+/* Desktop 1024px */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas baja */
+    }
+    .card {
+        color: white; /* Opcional: cambio visual para identificar el salto */
+    }
+}
+

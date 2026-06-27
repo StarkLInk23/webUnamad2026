@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Inicio Bootstrap</title>
+</head>
+<body>
+    <!-- JavaScript Bundle with Popper 
+    <div class="container">
+        <h1>Pruebas</h1>
+        <button class="btn btn-success">Click aquí</button>
+    </div> -->
+    <main class="container">
+        <h2>Columnas</h2>
+        <div class="row">
+            <div class="col oscuro">1ra columna</div>
+            <div class="col claro">2da columna</div>
+            <div class="col oscuro">3ra columna</div>
+            <div class="col claro">4ta columna</div>
+        </div>
+
+        <hr>
+        <h2>Columnas definidas</h2>
+        <div class="row">
+            <div class="col-5 oscuro">Columna de 5</div>
+            <div class="col-7 claro">Columna de 7</div>
+        </div>
+
+        <h2>Columnas responsive</h2>
+        <!-- breakpoint -->
+         <h3><code>col-xl-#</code></h3>
+         <h5>xl-> las columnas colapsan si el ancho disponible
+            es menor a 1200px
+         </h5>
+        <div class="row">
+            <div class="col-xl-8 oscuro">
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                 Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam. Voluptas, voluptate.
+                  Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam.
+            </div>
+            <div class="col-xl-4 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+        </div>
+
+        <hr>
+        <h3><code>col-sm-#</code></h3>
+        <h5>sm-> las columnas colapsan si el ancho disponible
+            es menor a 576px
+         </h5>
+        <div class="row">
+            <div class="col-sm-3 oscuro">
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                 Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam. Voluptas, voluptate.
+                  Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam.
+            </div>
+            <div class="col-sm-9 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+        </div>
+
+        <hr>
+        <h3><code>col-lg-#</code></h3>
+        <h5>lg-> las columnas colapsan si el ancho disponible
+            es menor a 992px
+         </h5>
+        <div class="row">
+            <div class="col-lg-4 oscuro">
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                 Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam. Voluptas, voluptate.
+                  Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam.
+            </div>
+            <div class="col-lg-4 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+            <div class="col-lg-4 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+        </div>
+
+        <hr>
+        <h3><code>col-md-#</code></h3>
+        <h5>md-> las columnas colapsan si el ancho disponible
+            es menor a 768px
+         </h5>
+        <div class="row">
+            <div class="col-md-6 oscuro">
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                 Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam. Voluptas, voluptate.
+                  Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam.
+            </div>
+            <div class="col-md-6 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+        </div>
+
+        <hr>
+        <h3><code>Columnas responsives combinadas</code></h3>
+        <h5>Combinando las clases previamente previstas,
+            podemos indicar que la "col" ocupe distinas cantidades de 
+            columnas en diferentes medidas (breakpoints).
+        </h5>
+        <div class="row">
+            <div class="col-xl-7 col-lg-12 oscuro">
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+                 Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam. Voluptas, voluptate.
+                  Molestias, quisquam. Voluptas, voluptate. Molestias, quisquam.
+            </div>
+            <div class="col-xl-3 col-lg-8 col-md-6 col-sm-12 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores maxime eligendi quaerat voluptatibus saepe quis praesentium doloribus 
+                totam cumque dolorum. Fugiat voluptatem, quos corporis voluptas nostrum placeat nam 
+                sequi alias.
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+</body>
+</html>

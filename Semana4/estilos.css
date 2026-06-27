@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3em;
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 1.5em;
+    justify-content: center;
+    display: flex;
+    background-color: orange;
+    padding: 5px;
+}
+
+[href="https://www.instagram.com/"]{
+    color: red;
+    font-size: 1.5em;
+}
+
+[href="https://www.facebook.com/"]{
+    color: blueviolet;
+    font-size: 1.5em;
+}
+
+p:hover{
+    text-decoration: underline;
+}
+
+input:focus{
+    background-color: lightyellow;
+}
+
+ol li:nth-child(even){ 
+    background-color: lightgreen;
+}
+
+ol li:nth-child(odd){ 
+    background-color: lightcyan;
+}
+
+p::first-line{
+    color: blue;
+    text-decoration: underline;
+}
+
+p::first-letter{
+    font-size: 44px;
+    color: red;
+}
+
+.tarjeta-plato{
+    padding: 5px;
+    border: 2px solid orange;
+    height: 560px;
+    width: 350px;
+    margin: 10px;
+}
+
+.tarjeta-postre{
+    padding: 5px;
+    border: 2px solid orange;
+    height: 460px;
+    width: 350px;
+    margin: 10px;
+}
+
+.ingredientes{
+    padding: 5px;
+    margin: 8px;
+}
+
+.recetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.busqueda{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    width: 85.5%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    background-color: orange;
+    color: black;
+    gap: 5rem;
+    padding: 2rem 3rem;
+    font-size: 1.25rem;
+    list-style: none;
+    text-decoration: underline;
+}
+
+body{
+    background-color: white;
+}
+

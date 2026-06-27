@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf6ec;
+    font-family: Georgia, serif;
+}
+
+/* header */
+header {
+    background-color: orange;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* menu nav*/
+.menu ul {
+    display: flex;
+    justify-content: center;
+    background-color: #e69500;
+    color: white;
+    gap: 3rem;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.menu ul li {
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.menu ul li:hover {
+    color: #fff3cc;
+    text-decoration: underline;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 3rem;
+    background-color: #fff3cc;
+}
+
+.busqueda input {
+    padding: 6px 12px;
+    border: 2px solid orange;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    width: 220px;
+    outline: none;
+}
+
+input:focus {
+    background-color: lightyellow;
+    border-color: #e69500;
+}
+
+/* titulos */
+h3 {
+    font-size: 1.3em;
+    justify-content: center;
+    display: flex;
+    background-color: orange;
+    color: white;
+    padding: 8px 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+main {
+    padding: 20px 10px;
+}
+
+main>h1 {
+    color: #b85c00;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid orange;
+    padding-bottom: 8px;
+}
+
+/* tarjetas*/
+.recetas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-plato {
+    padding: 0;
+    border: 2px solid orange;
+    height: auto;
+    width: 340px;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-postre {
+    padding: 0;
+    border: 2px solid orange;
+    height: auto;
+    width: 340px;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-plato img,
+.tarjeta-postre img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-plato p,
+.tarjeta-postre p {
+    padding: 10px 12px 8px;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* pseudo elementos de párrafos */
+p:hover {
+    text-decoration: underline;
+}
+
+/* antes aplicaba a todos los párrafos
+p::first-line {
+    color: #b85c00;
+    text-decoration: underline;
+}
+    
+p::first-letter {
+    font-size: 36px;
+    color: orange;
+    font-weight: bold;
+    float: left;
+    margin-right: 3px;
+    line-height: 1;
+}
+*/
+
+/* ahora solo aplica a párrafos dentro de main*/
+main p::first-letter {
+    font-size: 36px;
+    color: orange;
+    font-weight: bold;
+    float: left;
+    margin-right: 3px;
+    line-height: 1;
+}
+
+main p::first-line {
+    color: #b85c00;
+    text-decoration: underline;
+}
+
+
+/* ingredientes */
+.ingredientes {
+    padding: 8px 12px 12px;
+    margin: 0;
+    border-top: 1px solid #ffd580;
+}
+
+.ingredientes h4 {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ol li:nth-child(even) {
+    background-color: lightgreen;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+ol li:nth-child(odd) {
+    background-color: lightcyan;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+/* links*/
+[href="https://www.instagram.com/"] {
+    color: #e1306c;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+[href="https://www.facebook.com/"] {
+    color: #1877f2;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 20px;
+}
+
+footer div {
+    margin-bottom: 4px;
+}
+
+footer p {
+    font-size: 0.85em;
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.boton-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
